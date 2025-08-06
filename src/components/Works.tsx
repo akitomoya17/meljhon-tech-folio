@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Award, Users, Code, Database } from "lucide-react";
+import { ExternalLink, Github, Award, Users, Code, Database,CalendarDays } from "lucide-react";
 
 const Works = () => {
   const projects = [
@@ -124,6 +124,7 @@ const Works = () => {
                     alt={cert.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+
                 </div>
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -133,6 +134,7 @@ const Works = () => {
                     <div className="flex items-center justify-between">
                       <span>Issued by {cert.issuer}</span>
                       <span className="text-sm font-medium">{cert.date}</span>
+                      <CalendarDays size={14} />
                     </div>                  <CardContent>
                     <a 
                       href={cert.credentialUrl}
