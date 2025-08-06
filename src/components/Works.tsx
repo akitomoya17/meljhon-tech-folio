@@ -47,7 +47,7 @@ const Works = () => {
       issuer: "Microsoft",
       date: "Jan 2020",
       credentialUrl: "https://www.credly.com/badges/b4d1522f-41f74ad2-9bb7-ca5bf186b653",
-      image: "/lovable-uploads/mta-java-cert.png"
+      image: "/lovable-uploads/MTA.png"
     }
   ];
 
