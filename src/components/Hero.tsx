@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-const profileImage = "/lovable-uploads/ad59d6f4-d59f-4380-bb7d-cacaa143005d.png";
+const profileImage = "/lovable-uploads/b71b564b-6cca-42da-9a8c-f326b2b98508.png";
 
 const Hero = () => {
   const scrollToContact = () => {
