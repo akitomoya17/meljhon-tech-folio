@@ -29,16 +29,30 @@ All colors MUST be HSL.
     --accent: 210 100% 94%;
     --accent-foreground: 210 100% 20%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(210 100% 50%), hsl(200 100% 60%));
+    /* Hero Section Design */
+    --hero-gradient: linear-gradient(135deg, hsl(212 100% 45%) 0%, hsl(210 100% 55%) 50%, hsl(205 100% 65%) 100%);
+    --hero-overlay: linear-gradient(135deg, hsl(210 100% 20% / 0.8), hsl(200 100% 30% / 0.9));
     --hero-text: 0 0% 100%;
     --hero-text-muted: 210 100% 90%;
     
-    /* Enhanced UI/UX tokens */
-    --gradient-card: linear-gradient(145deg, hsl(210 100% 98%), hsl(210 100% 95%));
-    --shadow-card: 0 4px 20px -2px hsl(210 100% 50% / 0.1);
-    --shadow-card-hover: 0 8px 30px -4px hsl(210 100% 50% / 0.15);
-    --border-enhanced: hsl(210 20% 85%);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Enhanced UI/UX Design System */
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-card-hover: linear-gradient(145deg, hsl(210 100% 99%), hsl(210 100% 96%));
+    --shadow-card: 0 4px 20px -2px hsl(210 100% 50% / 0.08);
+    --shadow-card-hover: 0 12px 40px -4px hsl(210 100% 50% / 0.15);
+    --shadow-profile: 0 20px 60px -10px hsl(210 100% 20% / 0.4);
+    --border-enhanced: hsl(210 20% 90%);
+    --border-card: hsl(210 20% 95%);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease-out;
+    
+    /* Professional Color Palette */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 210 100% 50%;
+    --info-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -88,9 +102,11 @@ All colors MUST be HSL.
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 100% 90%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(210 100% 50%), hsl(200 100% 60%));
+    /* Dark Mode Hero */
+    --hero-gradient: linear-gradient(135deg, hsl(212 100% 35%) 0%, hsl(210 100% 45%) 50%, hsl(205 100% 55%) 100%);
+    --hero-overlay: linear-gradient(135deg, hsl(210 100% 10% / 0.9), hsl(200 100% 15% / 0.95));
     --hero-text: 0 0% 100%;
-    --hero-text-muted: 210 100% 90%;
+    --hero-text-muted: 210 100% 85%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -116,5 +132,47 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhanced animations and effects */
+  .glass-card {
+    backdrop-filter: blur(10px);
+    background: hsl(var(--card) / 0.8);
+    border: 1px solid hsl(var(--border-enhanced));
+  }
+  
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+  
+  .fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+    100% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+  }
+  
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
