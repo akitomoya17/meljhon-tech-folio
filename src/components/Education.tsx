@@ -30,21 +30,21 @@ const Education = () => {
       issuer: "Rekruuto",
       date: "July 2025",
       credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/008/5nDZ3xmVezbnl4k5zy2qpdWj9/416ef7db9f7a47f6db3513e7f90c45cc12e0e298.pdf",
-      image: "https://drive.google.com/file/d/1iGC-C0FM0CusMpFbCGQfLSKtB1WhAPh-/view?usp=sharing"
+      image: "/lovable-uploads/rekruuto-level1-cert.png"
     },
     {
       title: "Rekruuto Attention to Detail (Level 2 Certification)",
       issuer: "Rekruuto", 
       date: "July 2025",
       credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/361/OA0Ekvge5YdnlmJ56KqRLpWxX/47772e94c7d93b382bb1f784afe5ad2c07cf482b.pdf",
-      image: "https://drive.google.com/file/d/17rdD7u9_waTKk7JzoLSHRefWIukocgH0/view?usp=sharing"
+      image: "/lovable-uploads/rekruuto-level2-cert.png"
     },
     {
       title: "MTA: Introduction to Programming Using Java - Certified",
       issuer: "Microsoft",
       date: "January 2020",
       credentialUrl: "https://www.credly.com/badges/b4d1522f-41f74ad2-9bb7-ca5bf186b653",
-      image: "https://drive.google.com/file/d/1Y97wbSWEQkHjjh40nIVA5O_Rz6pAKY_K/view?usp=sharing"
+      image: "/lovable-uploads/mta-java-cert.png"
     }
   ];
 
