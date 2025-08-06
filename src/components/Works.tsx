@@ -32,18 +32,21 @@ const Works = () => {
       title: "Rekruuto Level 1 VA Certification",
       issuer: "Rekruuto",
       date: "July 2025",
+      credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/008/5nDZ3xmVezbnl4k5zy2qpdWj9/416ef7db9f7a47f6db3513e7f90c45cc12e0e298.pdf",
       image: "/lovable-uploads/rekruuto-level1-cert.png"
     },
     {
       title: "Rekruuto Attention to Detail (Level 2)",
       issuer: "Rekruuto", 
       date: "July 2025",
+      credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/361/OA0Ekvge5YdnlmJ56KqRLpWxX/47772e94c7d93b382bb1f784afe5ad2c07cf482b.pdf",
       image: "/lovable-uploads/rekruuto-level2-cert.png"
     },
     {
       title: "MTA: Introduction to Programming Using Java",
       issuer: "Microsoft",
-      date: "2024",
+      date: "Jan 2020",
+      credentialUrl: "https://www.credly.com/badges/b4d1522f-41f74ad2-9bb7-ca5bf186b653",
       image: "/lovable-uploads/mta-java-cert.png"
     }
   ];
