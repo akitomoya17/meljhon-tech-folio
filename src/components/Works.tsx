@@ -133,8 +133,8 @@ const Works = () => {
                   <CardDescription className="text-muted-foreground">
                     <div className="flex items-center justify-between">
                       <span>Issued by {cert.issuer}</span>
-                      <CalendarDays size={14} />
-                      <span className="text-sm font-medium">{cert.date}</span>
+                      
+                      <span className="text-sm font-medium">{cert.date} <CalendarDays size={14} /></span>
                       
                     </div>                  <CardContent>
                     <a 
