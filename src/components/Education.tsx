@@ -115,16 +115,7 @@ const Education = () => {
 
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <a 
-                      href={cert.credentialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary/80 underline text-sm inline-flex items-center gap-1 font-medium"
-                    >
-                      View Credential →
-                    </a>
-                  </CardContent>
+
                 </Card>
               ))}
             </div>
