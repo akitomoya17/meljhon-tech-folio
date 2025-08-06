@@ -133,7 +133,17 @@ const Works = () => {
                     <div className="flex items-center justify-between">
                       <span>Issued by {cert.issuer}</span>
                       <span className="text-sm font-medium">{cert.date}</span>
-                    </div>
+                    </div>                  <CardContent>
+                    <a 
+                      href={cert.credentialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 underline text-sm inline-flex items-center gap-1 font-medium"
+                    >
+                      View Credential →
+                    </a>
+                  </CardContent>
+
                   </CardDescription>
                 </CardHeader>
               </Card>
