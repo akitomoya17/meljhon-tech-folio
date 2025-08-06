@@ -5,6 +5,7 @@ import { CalendarDays, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      logo: "/lovable-uploads/1a9a5f4a-bc06-48d8-898f-4af4d72d2290.png",
       title: "IT Support Engineer (Project-Based)",
       company: "Bladegrass Technologies Inc./ Concentrix",
       location: "Davao City, PH",
@@ -18,6 +19,7 @@ const Experience = () => {
       ]
     },
     {
+      logo: "/lovable-uploads/4ff097e1-2cbb-4863-9210-94c2e5ab29e6.png",
       title: "IT Technical Support",
       company: "E&W Group of Companies",
       location: "Davao City, PH",
@@ -31,6 +33,7 @@ const Experience = () => {
       ]
     },
     {
+      logo: "/lovable-uploads/f1e07c37-2b89-4aa2-827d-1bb63867fd3e.png",
       title: "Passport/Authentication Staff",
       company: "Department of Foreign Affairs",
       location: "Davao City, PH",
@@ -61,12 +64,21 @@ const Experience = () => {
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
               <CardHeader className="bg-primary/5">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div>
-                    <CardTitle className="text-xl text-foreground">{exp.title}</CardTitle>
-                    <p className="text-lg font-semibold text-primary">{exp.company}</p>
-                    {exp.description && (
-                      <p className="text-muted-foreground italic">{exp.description}</p>
-                    )}
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src={exp.logo} 
+                        alt={`${exp.company} logo`}
+                        className="w-12 h-12 object-contain rounded-lg bg-white p-1 shadow-sm"
+                      />
+                    </div>
+                    <div>
+                      <CardTitle className="text-xl text-foreground">{exp.title}</CardTitle>
+                      <p className="text-lg font-semibold text-primary">{exp.company}</p>
+                      {exp.description && (
+                        <p className="text-muted-foreground italic">{exp.description}</p>
+                      )}
+                    </div>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-2">
                     <Badge variant="secondary" className="flex items-center gap-1">
