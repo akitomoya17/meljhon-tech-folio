@@ -112,15 +112,7 @@ const Education = () => {
                           {cert.date}
                         </Badge>
                       </div>
-                      {cert.image && (
-                        <div className="flex-shrink-0">
-                          <img 
-                            src={cert.image} 
-                            alt={`${cert.title} certificate`}
-                            className="w-20 h-20 object-contain rounded-lg border border-border bg-background p-2"
-                          />
-                        </div>
-                      )}
+
                     </div>
                   </CardHeader>
                   <CardContent>
