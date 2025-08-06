@@ -52,13 +52,109 @@ const Works = () => {
   ];
 
   return (
-    <section id="works" className="py-20 bg-gradient-to-br from-background to-muted/30">
+    <section id="works" className="py-20 bg-gradient-to-br from-amber-700 via-amber-600 to-orange-700">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Film Strip Sample Works */}
+        <div className="text-center mb-16 relative">
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex-1">
+              <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 transform -rotate-1">
+                Sample Works
+              </h2>
+              <div className="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-lg font-bold text-lg transform rotate-2 shadow-lg">
+                <span>CLIENT MEETING!</span>
+              </div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold text-xl mb-2 relative">
+                <div className="absolute -top-2 -right-2 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-yellow-400"></div>
+                5.0
+                <div className="text-xs">RATING</div>
+              </div>
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-6 h-6 bg-yellow-400 clip-star"></div>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* Film Strip */}
+          <div className="relative mx-auto max-w-6xl">
+            {/* Film strip holes */}
+            <div className="absolute top-0 left-0 right-0 h-8 bg-black flex justify-between items-center px-4">
+              {[...Array(20)].map((_, i) => (
+                <div key={i} className="w-4 h-4 bg-white rounded-sm"></div>
+              ))}
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 h-8 bg-black flex justify-between items-center px-4">
+              {[...Array(20)].map((_, i) => (
+                <div key={i} className="w-4 h-4 bg-white rounded-sm"></div>
+              ))}
+            </div>
+            
+            {/* Film frames */}
+            <div className="bg-black p-4 mt-8 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {/* Frame 1 - Video Call */}
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-4 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full mx-auto mb-2"></div>
+                    <div className="text-xs font-medium">Client Meeting</div>
+                  </div>
+                </div>
+                
+                {/* Frame 2 - Screen Share */}
+                <div className="aspect-video bg-gradient-to-br from-green-100 to-green-200 rounded-lg p-4 flex items-center justify-center relative">
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="text-center">
+                    <div className="w-8 h-8 bg-green-600 rounded mx-auto mb-2"></div>
+                    <div className="text-xs font-medium">Screen Share</div>
+                  </div>
+                </div>
+                
+                {/* Frame 3 - Team Meeting */}
+                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg p-4 flex items-center justify-center relative">
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-purple-500 rounded-full"></div>
+                  <div className="text-center">
+                    <div className="flex gap-1 justify-center mb-2">
+                      <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+                      <div className="w-4 h-4 bg-purple-600 rounded-full"></div>
+                    </div>
+                    <div className="text-xs font-medium">Team Call</div>
+                  </div>
+                </div>
+                
+                {/* Frame 4 - Presentation */}
+                <div className="aspect-video bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg p-4 flex items-center justify-center relative">
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <div className="text-center">
+                    <div className="w-10 h-6 bg-orange-600 rounded mx-auto mb-2"></div>
+                    <div className="text-xs font-medium">Presentation</div>
+                  </div>
+                </div>
+                
+                {/* Frame 5 - Training */}
+                <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 rounded-lg p-4 flex items-center justify-center relative">
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-teal-500 rounded-full"></div>
+                  <div className="text-center">
+                    <div className="w-8 h-8 bg-teal-600 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div className="text-xs font-medium">Training</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Sample Works & Achievements
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Professional Achievements
+          </h3>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Highlighting key projects and professional accomplishments in IT support and technical operations
           </p>
         </div>
