@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background geometric-pattern relative">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">About Me</h2>
@@ -71,7 +71,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
-            <Card key={index} className="text-center p-6 tech-card isometric-hover tech-glow">
+            <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">
                 <div className="flex justify-center">{item.icon}</div>
                 <h4 className="text-lg font-semibold text-foreground">{item.title}</h4>
