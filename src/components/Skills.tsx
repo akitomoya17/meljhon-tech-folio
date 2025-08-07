@@ -92,24 +92,22 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-section tech-pattern">
+    <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Technical Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Skills Set</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive technical and soft skills across platforms, tools, and technologies 
-            for enterprise-level IT support and infrastructure management.
+            Soft and technical skills across multiple platforms, tools, and technologies 
+            essential for modern IT support and infrastructure management.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="glass-card hover:shadow-card-hover transition-all duration-300 hover:scale-105 border-0">
-              <CardHeader className="pb-4">
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-lg">
-                  <div className="p-2 bg-gradient-tech rounded-lg text-white">
-                    {category.icon}
-                  </div>
+                  {category.icon}
                   {category.title}
                 </CardTitle>
               </CardHeader>

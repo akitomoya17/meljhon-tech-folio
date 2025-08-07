@@ -49,20 +49,20 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-background">
+    <section id="experience" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">IT Support Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Work Experience</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Proven expertise in technical support, system administration, and 
-            infrastructure management across enterprise environments.
+            A track record of delivering exceptional technical support and driving system 
+            improvements across various industries and environments.
           </p>
         </div>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="overflow-hidden glass-card hover:shadow-card-hover transition-all duration-300 hover:scale-[1.02] border-0">
-              <CardHeader className="bg-gradient-tech/10 border-b border-border-tech">
+            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <CardHeader className="bg-primary/5">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
