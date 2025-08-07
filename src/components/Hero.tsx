@@ -19,14 +19,16 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-hero-gradient flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative min-h-screen bg-hero-gradient flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden circuit-bg">
       {/* Animated background overlay */}
       <div className="absolute inset-0 bg-hero-overlay opacity-60"></div>
       
-      {/* Floating geometric shapes for visual interest */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-bounce-gentle"></div>
-      <div className="absolute bottom-20 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl float-animation"></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/8 rounded-lg blur-lg float-animation" style={{animationDelay: '2s'}}></div>
+      {/* Tech-inspired floating geometric shapes */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-electric/20 clip-hexagon blur-lg float-animation"></div>
+      <div className="absolute bottom-20 right-20 w-32 h-32 bg-neon/15 rounded-full blur-2xl tech-glow"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/20 isometric blur-sm float-animation" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-1/3 right-1/3 w-12 h-12 bg-electric/25 clip-hexagon blur-md float-animation" style={{animationDelay: '1s'}}></div>
+      <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-primary/10 rounded-lg blur-xl tech-glow" style={{animationDelay: '3s'}}></div>
       
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -83,8 +85,8 @@ const Hero = () => {
           
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative group">
-              {/* Glowing background effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+              {/* Tech glowing background effect */}
+              <div className="absolute inset-0 bg-gradient-tech rounded-full blur-2xl opacity-40 tech-glow"></div>
               
               {/* Main profile container */}
               <div className="relative w-80 h-80 md:w-96 md:h-96">

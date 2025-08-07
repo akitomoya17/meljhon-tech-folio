@@ -52,7 +52,7 @@ const Works = () => {
   ];
 
   return (
-    <section id="works" className="py-20 bg-gradient-to-br from-background via-muted/20 to-accent/30">
+    <section id="works" className="py-20 bg-gradient-to-br from-background via-muted/20 to-accent/30 circuit-bg geometric-pattern relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Film Strip Sample Works */}
         <div className="text-center mb-16 relative">
@@ -164,7 +164,7 @@ const Works = () => {
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Key Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border-card">
+              <Card key={index} className="group tech-card isometric-hover tech-glow border-border-tech">
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -213,7 +213,7 @@ const Works = () => {
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Professional Certifications</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
-              <Card key={index} className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border-card overflow-hidden">
+              <Card key={index} className="group tech-card isometric-hover tech-glow border-border-tech overflow-hidden">
                 <div className="aspect-video bg-muted/30 overflow-hidden">
                   <img 
                     src={cert.image} 
