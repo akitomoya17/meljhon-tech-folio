@@ -20,34 +20,57 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen bg-hero-gradient flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Animated background overlay */}
-      <div className="absolute inset-0 bg-hero-overlay opacity-60"></div>
+      {/* Tech background overlay */}
+      <div className="absolute inset-0 bg-hero-overlay opacity-75"></div>
+      <div className="absolute inset-0 tech-pattern"></div>
       
-      {/* Floating geometric shapes for visual interest */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-bounce-gentle"></div>
-      <div className="absolute bottom-20 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl float-animation"></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/8 rounded-lg blur-lg float-animation" style={{animationDelay: '2s'}}></div>
+      {/* Geometric wireframe patterns */}
+      <div className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-lg rotate-45 animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 border-2 border-white/30 hexagon-frame float-animation"></div>
+      <div className="absolute top-1/3 right-1/4 w-16 h-16 border border-white/25 rounded-full animate-bounce-gentle" style={{animationDelay: '1s'}}></div>
+      <div className="absolute bottom-1/3 left-1/4 w-20 h-20 border border-white/20 rotate-12 float-animation" style={{animationDelay: '2s'}}></div>
       
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left animate-slide-in-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-hero-text mb-6 tracking-tight">
-              <span className="block">Meljhon</span>
-              <span className="block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-                Deaño
+              <span className="block">IT SUPPORT</span>
+              <span className="block text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                & SERVICES
               </span>
             </h1>
-            <div className="relative mb-6">
-              <p className="text-xl md:text-2xl text-hero-text-muted font-medium">
-                IT Support | Technical Support | Support Engineer
+            <div className="relative mb-8">
+              <p className="text-xl md:text-2xl text-hero-text-muted font-medium mb-4">
+                Meljhon Deaño
               </p>
-              <div className="h-1 w-24 bg-gradient-to-r from-white to-transparent mt-3 mx-auto lg:mx-0"></div>
+              <p className="text-lg text-hero-text-muted/90">
+                Technical Support Engineer | IT Infrastructure Specialist
+              </p>
+              <div className="h-1 w-32 bg-gradient-to-r from-white via-blue-200 to-transparent mt-4 mx-auto lg:mx-0"></div>
             </div>
-            <p className="text-lg text-hero-text-muted mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              IT Support professional with 3+ years of experience in both government and private sectors. 
-              Skilled in troubleshooting hardware, software, and network issues, managing IT requests, 
-              and maintaining reliable system operations.
+            <p className="text-lg text-hero-text-muted mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Need help with technical difficulties? Our knowledgeable IT team is available to 
+              provide swift, efficient, and dependable assistance for all your technology needs.
             </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto lg:mx-0">
+              <div className="flex items-center gap-3 text-hero-text-muted">
+                <div className="w-3 h-3 bg-accent rounded-full"></div>
+                <span>Cybersecurity Solutions</span>
+              </div>
+              <div className="flex items-center gap-3 text-hero-text-muted">
+                <div className="w-3 h-3 bg-accent rounded-full"></div>
+                <span>End-User Support</span>
+              </div>
+              <div className="flex items-center gap-3 text-hero-text-muted">
+                <div className="w-3 h-3 bg-accent rounded-full"></div>
+                <span>Network Management</span>
+              </div>
+              <div className="flex items-center gap-3 text-hero-text-muted">
+                <div className="w-3 h-3 bg-accent rounded-full"></div>
+                <span>System Maintenance</span>
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <Button 
@@ -82,32 +105,35 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
-            <div className="relative group">
-              {/* Glowing background effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+            <div className="relative">
+              {/* Tech background elements */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
               
-              {/* Main profile container */}
+              {/* Hexagonal frame container */}
               <div className="relative w-80 h-80 md:w-96 md:h-96">
-                {/* Profile image with enhanced styling */}
-                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white/30 shadow-profile group-hover:border-white/50 transition-all duration-500">
+                {/* Server rack background simulation */}
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-blue-800/30 rounded-3xl"></div>
+                <div className="absolute inset-4 border-2 border-cyan-400/30 rounded-2xl bg-blue-950/20"></div>
+                
+                {/* Hexagonal profile frame */}
+                <div className="absolute top-8 left-8 right-8 bottom-8 hexagon-frame overflow-hidden border-4 border-cyan-400/50 bg-white shadow-2xl">
                   <img 
                     src={profileImage} 
-                    alt="Meljhon Deaño" 
-                    className="w-full h-full object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-700"
+                    alt="IT Support Professional" 
+                    className="w-full h-full object-cover object-center scale-110"
                   />
                 </div>
                 
-                {/* Status indicator with enhanced animation */}
-                <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-3 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                  <div className="relative">
-                    <div className="w-5 h-5 bg-green-500 rounded-full"></div>
-                    <div className="absolute inset-0 w-5 h-5 bg-green-400 rounded-full animate-ping"></div>
-                  </div>
+                {/* Tech indicators */}
+                <div className="absolute top-4 right-4 flex flex-col gap-2">
+                  <div className="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+                  <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <div className="w-4 h-4 bg-cyan-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                 </div>
                 
-                {/* Decorative floating elements */}
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-white/20 rounded-full blur-sm animate-bounce-gentle"></div>
-                <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-white/15 rounded-full blur-sm float-animation" style={{animationDelay: '1s'}}></div>
+                {/* Floating tech elements */}
+                <div className="absolute -top-2 -left-2 w-6 h-6 border-2 border-cyan-400/60 rotate-45 animate-bounce-gentle"></div>
+                <div className="absolute -bottom-4 -right-4 w-8 h-8 border border-blue-400/60 rounded-full float-animation" style={{animationDelay: '1.5s'}}></div>
               </div>
             </div>
           </div>

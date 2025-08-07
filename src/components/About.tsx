@@ -26,13 +26,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-gradient-section tech-pattern">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Professional Overview</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate IT professional with a proven track record in technical support, 
-            system administration, and customer service excellence.
+            Delivering comprehensive IT support solutions with expertise in cybersecurity, 
+            infrastructure management, and technical excellence.
           </p>
         </div>
 
@@ -71,11 +71,15 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
-            <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card key={index} className="text-center p-6 glass-card hover:shadow-card-hover transition-all duration-300 hover:scale-105 border-0">
               <CardContent className="space-y-4">
-                <div className="flex justify-center">{item.icon}</div>
+                <div className="flex justify-center mb-4">
+                  <div className="p-4 bg-gradient-tech rounded-xl text-white shadow-lg">
+                    {item.icon}
+                  </div>
+                </div>
                 <h4 className="text-lg font-semibold text-foreground">{item.title}</h4>
-                <p className="text-muted-foreground">{item.description}</p>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </CardContent>
             </Card>
           ))}
