@@ -5,28 +5,22 @@ import { GraduationCap, Award, CalendarDays } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor's in Information Technology",
-      institution: "University of Mindanao, Matina Davao City",
-      period: "2017 - 2021",
-      type: "College"
+      degree: "Undergraduate Studies in Information Technology",
+      institution: "University of Mindanao",
+      period: "2019 - 2021",
+      type: "Undergraduate"
     },
     {
-      degree: "Senior High School",
-      institution: "Sta. Ana National High School, Suazo St.",
-      period: "2013 - 2017",
-      type: "High School"
-    },
-    {
-      degree: "Elementary Education",
-      institution: "Manuel L. Quezon, D. Ponce St. Davao City",
-      period: "2007 - 2013",
-      type: "Elementary"
+      degree: "Senior High School — Information and Communications Technology",
+      institution: "University of Mindanao",
+      period: "2017 - 2019",
+      type: "Senior High School"
     }
   ];
 
   const certifications = [
     {
-      title: "Rekruuto Level 1 VA Certification",
+      title: "Rekruuto Level 1 Virtual Assistant",
       issuer: "Rekruuto",
       date: "July 2025",
       credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/008/5nDZ3xmVezbnl4k5zy2qpdWj9/416ef7db9f7a47f6db3513e7f90c45cc12e0e298.pdf",
@@ -34,7 +28,7 @@ const Education = () => {
 
     },
     {
-      title: "Rekruuto Attention to Detail (Level 2 Certification)",
+      title: "Attention to Detail Level 2",
       issuer: "Rekruuto", 
       date: "July 2025",
       credentialUrl: "https://images.bannerbear.com/direct/JNodmlzogArzjAgPEe/requests/000/098/764/361/OA0Ekvge5YdnlmJ56KqRLpWxX/47772e94c7d93b382bb1f784afe5ad2c07cf482b.pdf",
@@ -42,9 +36,9 @@ const Education = () => {
 
     },
     {
-      title: "MTA: Introduction to Programming Using Java - Certified",
+      title: "Microsoft Technology Associate — Introduction to Programming Using Java",
       issuer: "Microsoft",
-      date: "January 2020",
+      date: "Certified",
       credentialUrl: "https://www.credly.com/badges/b4d1522f-41f74ad2-9bb7-ca5bf186b653",
       image: "/lovable-uploads/5397f133-5015-4ccd-971a-9f9fd1327e60.png"
 

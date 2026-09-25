@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       label: "Phone",
-      value: "+63 9077291142",
+      value: "+63 907 729 1142",
       href: "tel:+639077291142"
     },
     {
@@ -36,8 +36,8 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6 text-primary" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/meljhon357",
-      href: "https://linkedin.com/in/meljhon357"
+      value: "linkedin.com/in/meljohn357",
+      href: "https://linkedin.com/in/meljohn357"
     }
   ];
 
@@ -110,9 +110,9 @@ const Contact = () => {
             <div className="mt-12">
               <h4 className="text-lg font-semibold text-foreground mb-4">Professional Summary</h4>
               <p className="text-muted-foreground leading-relaxed">
-                With over 3 years of experience in IT support across government and private sectors, 
-                I bring expertise in troubleshooting, system administration, and customer service. 
-                I'm passionate about solving technical challenges and ensuring seamless IT operations.
+                With 4+ years of experience supporting government, private-sector, nonprofit, and
+                international clients, I specialize in endpoint management, Microsoft 365 administration,
+                network troubleshooting, and dependable remote and onsite support.
               </p>
             </div>
           </div>
