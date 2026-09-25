@@ -13,80 +13,69 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: <Users className="w-6 h-6 text-primary" />,
-      title: "User & Management",
+      title: "Systems & Infrastructure",
       skills: [
         "Active Directory",
-        "Google Workspace", 
-        "MS 365",
-        "Sharepoint",
-        "Entra",
-        "Office",
-        "Teams",
-        "Outlook"
+        "Microsoft 365",
+        "Entra ID",
+        "Intune",
+        "QNAP NAS",
+        "Servers"
       ]
     },
     {
       icon: <Monitor className="w-6 h-6 text-primary" />,
-      title: "Operating Systems",
+      title: "Operating Systems & Endpoints",
       skills: [
         "Windows 10/11",
         "Windows Server",
-        "Linux",
-        "MacOS",
-        "ChromeOS"
+        "Hardware Diagnostics",
+        "Software Diagnostics",
+        "Device Deployment"
       ]
     },
     {
       icon: <Server className="w-6 h-6 text-primary" />,
-      title: "Infrastructure",
+      title: "Networking & Security",
       skills: [
-        "CCTV",
-        "NAS (QNAP)",
-        "Network Server",
-        "PABX",
-        "POS (Loyverse & Activeone)",
-        "VOIP"
+        "TCP/IP",
+        "LAN / WAN / VLAN",
+        "VPN Configuration",
+        "Firewall Troubleshooting",
+        "Access Management"
       ]
     },
     {
       icon: <Network className="w-6 h-6 text-primary" />,
-      title: "Networking & Devices",
+      title: "IT Service Management",
       skills: [
-        "Access Points",
-        "DNS",
-        "LAN",
-        "P2P",
-        "Routers",
-        "Switches",
-        "TCP/IP",
-        "VLAN",
-        "VPN",
-        "WAN",
-        "WLAN"
+        "BMC Remedy",
+        "Zendesk",
+        "Jira",
+        "Remote Desktop Support",
+        "Incident Resolution"
       ]
     },
     {
       icon: <Wrench className="w-6 h-6 text-primary" />,
-      title: "Tools & Software",
+      title: "Productivity & Collaboration",
       skills: [
-        "Anydesk",
-        "BMC Remedy",
-        "Jira",
-        "Remote Desktop Protocol",
-        "Solvnow",
-        "TeamViewer",
-        "Zendesk"
+        "Microsoft Teams",
+        "SharePoint",
+        "Slack",
+        "Google Workspace",
+        "Project Documentation"
       ]
     },
     {
       icon: <Heart className="w-6 h-6 text-primary" />,
-      title: "Soft Skills",
+      title: "Operations",
       skills: [
-        "Adaptability",
-        "Attention to Detail",
-        "Empathy",
-        "Patience",
-        "Problem-solving"
+        "Data Backups",
+        "Security Audits",
+        "Asset Tracking",
+        "Technical Documentation",
+        "Standard Operating Procedures"
       ]
     }
   ];

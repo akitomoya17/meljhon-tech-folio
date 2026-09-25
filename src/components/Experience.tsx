@@ -5,45 +5,66 @@ import { CalendarDays, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      logo: "",
+      title: "Independent IT Support Specialist",
+      company: "Upwork",
+      location: "Remote",
+      period: "07/2025 - Present",
+      description: "Supporting international clients",
+      achievements: [
+        "Provide comprehensive remote IT support for hardware, software, VPN, firewall, and network connectivity issues",
+        "Administer Microsoft 365 and Google Workspace accounts, permissions, and security policies",
+        "Perform system updates, data backups, security audits, and maintain technical documentation and SOPs"
+      ]
+    },
+    {
       logo: "/lovable-uploads/1a9a5f4a-bc06-48d8-898f-4af4d72d2290.png",
       title: "IT Support Engineer (Project-Based)",
-      company: "Bladegrass Technologies Inc./ Concentrix",
-      location: "Davao City, PH",
+      company: "Bladegrass Technologies Inc. (Assigned to Concentrix)",
+      location: "Davao City, Philippines",
       period: "04/2025 - 06/2025",
-      description: "Contracted for Concentrix - Davao Finance Center",
+      description: "Project-based enterprise support",
       achievements: [
-        "Resolved 50+ weekly IT support tickets using BMC Remedy, ensuring minimal downtime across four floors",
-        "Imaged and deployed over 200 Windows 11 desktops, reducing setup time by 30% through standardization",
-        "Provided hands-on and remote support for PC, network, and telephony issues",
-        "Maintained up-to-date asset inventory for compliance audits using Microsoft Teams and internal tools"
+        "Resolved 50+ weekly incidents and service requests in BMC Remedy across PC, network, software, and telephony environments",
+        "Imaged, configured, and deployed 200+ Windows 11 desktops, reducing setup time by approximately 30%",
+        "Managed Active Directory OU moves, Entra ID and Intune compliance, user access provisioning, and audit-ready asset tracking"
       ]
     },
     {
       logo: "/lovable-uploads/4ff097e1-2cbb-4863-9210-94c2e5ab29e6.png",
       title: "IT Technical Support",
       company: "E&W Group of Companies",
-      location: "Davao City, PH",
+      location: "Davao City, Philippines",
       period: "07/2023 - 03/2025",
       description: "",
       achievements: [
-        "Delivered daily technical support across multiple departments via phone, remote access, and on-site",
-        "Managed company systems including websites, local & cloud drive (QNAP), POS, network servers, and CCTV",
-        "Led IT asset management and handled hardware/software installation, troubleshooting, backup/restore, and upgrades",
-        "Assisted with IT projects including system migrations and infrastructure improvements"
+        "Delivered Tier 1 and Tier 2 remote and onsite support for websites, servers, POS systems, QNAP NAS, CCTV, and end-user devices",
+        "Diagnosed and resolved hardware, software, connectivity, and performance issues to maintain seamless operations",
+        "Managed the complete IT asset lifecycle, including inventory, hardware upgrades, and infrastructure maintenance"
+      ]
+    },
+    {
+      logo: "",
+      title: "Board Administrative Assistant",
+      company: "Boundless Freedom Project",
+      location: "Remote",
+      period: "08/2025 - 06/2026",
+      description: "U.S.-based nonprofit",
+      achievements: [
+        "Maintained technical and administrative records, secure digital communication, and board documentation",
+        "Supported leadership with software access, digital workspace coordination, and technical troubleshooting"
       ]
     },
     {
       logo: "/lovable-uploads/f1e07c37-2b89-4aa2-827d-1bb63867fd3e.png",
-      title: "Passport/Authentication Staff",
+      title: "Passport / Authentication Staff",
       company: "Department of Foreign Affairs",
-      location: "Davao City, PH",
+      location: "Davao City, Philippines",
       period: "03/2022 - 06/2023",
       description: "",
       achievements: [
-        "Processed and encoded passport and authentication applications; maintained digital records",
-        "Issued official documents and performed verification against look-out-list databases",
-        "Assisted the IT officer with hardware/software troubleshooting and system issues",
-        "Organized and updated passport/archive records to ensure timely document retrieval"
+        "Assisted the internal IT officer with basic hardware and software troubleshooting, end-user support, and digital records maintenance",
+        "Processed authentication applications while maintaining strict compliance with data privacy and security protocols"
       ]
     }
   ];
@@ -66,11 +87,17 @@ const Experience = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                      <img 
-                        src={exp.logo} 
-                        alt={`${exp.company} logo`}
-                        className="w-12 h-12 object-contain rounded-lg bg-white p-1 shadow-sm"
-                      />
+                      {exp.logo ? (
+                        <img 
+                          src={exp.logo} 
+                          alt={`${exp.company} logo`}
+                          className="w-12 h-12 object-contain rounded-lg bg-card p-1 shadow-sm"
+                        />
+                      ) : (
+                        <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-bold">
+                          {exp.company.charAt(0)}
+                        </div>
+                      )}
                     </div>
                     <div>
                       <CardTitle className="text-xl text-foreground">{exp.title}</CardTitle>

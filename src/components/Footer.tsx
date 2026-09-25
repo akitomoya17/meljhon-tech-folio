@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-4">Meljhon Deaño</h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              IT Support professional with 3+ years of experience delivering exceptional 
-              technical support and system solutions across government and private sectors.
+              IT Support Specialist with 4+ years of experience in endpoint management,
+              network troubleshooting, and reliable remote and onsite support.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -30,7 +30,7 @@ const Footer = () => {
                 <Phone size={20} />
               </a>
               <a 
-                href="https://linkedin.com/in/meljhon357"
+                href="https://linkedin.com/in/meljohn357"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
@@ -83,7 +83,7 @@ const Footer = () => {
                   href="tel:+639077291142"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  +63 9077291142
+                  +63 907 729 1142
                 </a>
               </div>
               <div className="flex items-center gap-3">
