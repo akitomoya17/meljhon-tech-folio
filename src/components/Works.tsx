@@ -64,9 +64,10 @@ const Works = () => {
                 <div className="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)]">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <button
+                      <Button
                         type="button"
-                        className={`group relative min-h-[260px] overflow-hidden bg-muted text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 lg:min-h-[430px] ${
+                        variant="ghost"
+                        className={`group relative h-auto min-h-[260px] w-full overflow-hidden rounded-none bg-muted p-0 text-left hover:bg-muted focus-visible:ring-offset-2 lg:min-h-[430px] ${
                           index % 2 === 1 ? "lg:order-2" : ""
                         }`}
                         aria-label={`View ${project.title} screenshot`}
@@ -80,7 +81,7 @@ const Works = () => {
                           <Eye className="h-4 w-4" />
                           View screenshot
                         </span>
-                      </button>
+                      </Button>
                     </DialogTrigger>
                     <DialogContent className="max-h-[92vh] max-w-[94vw] overflow-auto p-3 sm:p-5">
                       <DialogHeader className="pr-8">
