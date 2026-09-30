@@ -11,8 +11,8 @@ const Hero = () => {
     }
   };
 
-  const scrollToExperience = () => {
-    const element = document.querySelector("#experience");
+  const scrollToWorks = () => {
+    const element = document.querySelector("#works");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -56,7 +56,7 @@ const Hero = () => {
                 Work With Me
               </Button>
               <Button 
-                onClick={scrollToExperience}
+                onClick={scrollToWorks}
                 variant="outline" 
                 className="border-2 border-white/30 bg-white/10 text-white hover:bg-white/20 hover:border-white/50 hover:scale-105 px-8 py-3 text-lg font-semibold transition-all duration-300 rounded-xl backdrop-blur-sm"
               >
