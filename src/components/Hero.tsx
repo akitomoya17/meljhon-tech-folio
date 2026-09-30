@@ -39,14 +39,13 @@ const Hero = () => {
             </h1>
             <div className="relative mb-6">
               <p className="text-xl md:text-2xl text-hero-text-muted font-medium">
-                IT Support | Technical Support | Support Engineer
+                IT Support Specialist | Endpoint &amp; Microsoft 365
               </p>
               <div className="h-1 w-24 bg-gradient-to-r from-white to-transparent mt-3 mx-auto lg:mx-0"></div>
             </div>
             <p className="text-lg text-hero-text-muted mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              IT Support professional with 3+ years of experience in both government and private sectors. 
-              Skilled in troubleshooting hardware, software, and network issues, managing IT requests, 
-              and maintaining reliable system operations.
+              Results-driven IT Support Specialist with 4+ years of experience in endpoint management,
+              network troubleshooting, Microsoft 365, Active Directory, Entra ID, and Intune.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -76,7 +75,7 @@ const Hero = () => {
                 <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
                   <Phone size={18} />
                 </div>
-                <span className="font-medium">+63 9077291142</span>
+                <span className="font-medium">+63 907 729 1142</span>
               </div>
             </div>
           </div>

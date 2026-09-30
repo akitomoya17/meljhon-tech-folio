@@ -11,17 +11,17 @@ const About = () => {
     {
       icon: <Users className="w-8 h-8 text-primary" />,
       title: "Network Management",
-      description: "Ensuring seamless network connectivity and infrastructure management"
+      description: "TCP/IP, LAN/WAN/VLAN, and remote desktop support"
     },
     {
       icon: <Shield className="w-8 h-8 text-primary" />,
       title: "System Security",
-      description: "Experience with passport authentication systems and secure documentation"
+      description: "VPN, firewall troubleshooting, and access management"
     },
     {
       icon: <Award className="w-8 h-8 text-primary" />,
       title: "IT Infrastructure",
-      description: "Installing, configuring, and maintaining computer systems and networks"
+      description: "Windows 10/11, Microsoft 365, Entra ID, Intune, QNAP NAS, and servers"
     }
   ];
 
@@ -40,15 +40,13 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Professional Background</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              IT Support professional with over 3 years of combined government service and hands-on 
-              experience providing technical support in fast-paced environments. I am skilled in 
-              troubleshooting hardware and software issues, ensuring seamless network connectivity, 
-              and offering customer-focused solutions.
+              Results-driven IT Support Specialist with 4+ years of experience delivering robust technical
+              solutions, endpoint management, and network troubleshooting. Proven expertise in Microsoft 365,
+              Active Directory, Entra ID, and Intune.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Knowledgeable at managing IT-related requests, maintaining system performance, and 
-              ensuring the smooth operation of IT infrastructure. Proficient in identifying and 
-              resolving technical problems quickly and effectively, while providing excellent user support.
+              Track record of resolving complex service requests and executing large-scale device deployments,
+              supporting remote and onsite environments, reducing setup times, and keeping operations running for global clients.
             </p>
           </div>
           
