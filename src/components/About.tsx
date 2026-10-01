@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Shield, Server } from "lucide-react";
+import { Award, Users, Shield, Server, ClipboardList } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -22,6 +22,11 @@ const About = () => {
       icon: <Award className="w-8 h-8 text-primary" />,
       title: "IT Infrastructure",
       description: "Windows 10/11, Microsoft 365, Entra ID, Intune, QNAP NAS, and servers"
+    },
+    {
+      icon: <ClipboardList className="w-8 h-8 text-primary" />,
+      title: "Administrative & Operations",
+      description: "Document and records management, meeting minutes, calendar coordination, and executive support"
     }
   ];
 
@@ -69,7 +74,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {highlights.map((item, index) => (
             <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">
