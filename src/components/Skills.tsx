@@ -99,8 +99,8 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Skills Set</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Soft and technical skills across multiple platforms, tools, and technologies 
-            essential for modern IT support and infrastructure management.
+            Soft and technical skills across multiple platforms, tools, and technologies
+            essential for modern IT support, infrastructure management, and administrative operations.
           </p>
         </div>
 
