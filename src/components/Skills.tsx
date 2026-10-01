@@ -1,12 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Users, 
-  Monitor, 
-  Server, 
-  Network, 
-  Wrench, 
-  Heart 
+import {
+  Users,
+  Monitor,
+  Server,
+  Network,
+  Wrench,
+  ClipboardList,
+  Heart
 } from "lucide-react";
 
 const Skills = () => {
@@ -65,6 +66,18 @@ const Skills = () => {
         "Slack",
         "Google Workspace",
         "Project Documentation"
+      ]
+    },
+    {
+      icon: <ClipboardList className="w-6 h-6 text-primary" />,
+      title: "Administrative & Records",
+      skills: [
+        "Administrative Records Management",
+        "Board Documentation",
+        "Secure Digital Communication",
+        "Digital Workspace Coordination",
+        "Data Privacy Compliance",
+        "Application Processing"
       ]
     },
     {
