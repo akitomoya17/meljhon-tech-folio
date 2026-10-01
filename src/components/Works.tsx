@@ -8,7 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { CalendarDays, Cloud, Eye, Router, ShieldCheck } from "lucide-react";
+import { CalendarDays, Cloud, Eye, Maximize2, Router, ShieldCheck } from "lucide-react";
 import microsoft365OvhAsset from "@/assets/microsoft-365-ovh-cloud.png.asset.json";
 import mikrotikWinboxAsset from "@/assets/mikrotik-winbox-configuration.png.asset.json";
 
@@ -37,6 +37,8 @@ const projects = [
   },
 ];
 
+const portfolioUrl = "https://meljhon-tech-folio.lovable.app";
+
 const Works = () => {
   return (
     <section id="works" className="scroll-mt-20 bg-gradient-to-br from-background via-muted/20 to-accent/30 py-20">
@@ -61,34 +63,52 @@ const Works = () => {
                 key={project.title}
                 className="overflow-hidden rounded-lg border border-border-card bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
               >
-                <div className="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)]">
+                <div className="grid lg:grid-cols-[minmax(0,1.4fr)_minmax(340px,0.6fr)]">
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button
                         type="button"
                         variant="ghost"
-                        className={`group relative h-auto min-h-[260px] w-full overflow-hidden rounded-none bg-muted p-0 text-left hover:bg-muted focus-visible:ring-offset-2 lg:min-h-[430px] ${
+                        className={`group relative h-auto min-h-0 w-full overflow-hidden rounded-none bg-muted p-4 text-left hover:bg-muted focus-visible:ring-offset-2 sm:p-6 lg:p-8 ${
                           index % 2 === 1 ? "lg:order-2" : ""
                         }`}
                         aria-label={`View ${project.title} screenshot`}
                       >
-                        <img
-                          src={project.image}
-                          alt={project.imageAlt}
-                          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
-                        />
-                        <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 rounded-md bg-foreground/90 px-3 py-2 text-sm font-medium text-background shadow-card">
-                          <Eye className="h-4 w-4" />
-                          View screenshot
+                        <span className="relative block w-full overflow-hidden rounded-md border border-border bg-card shadow-card transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-card-hover">
+                          <span className="flex h-9 items-center gap-1.5 border-b border-border bg-background px-3" aria-hidden="true">
+                            <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-warning/70" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-success/70" />
+                            <span className="ml-2 h-4 flex-1 rounded-sm bg-muted" />
+                          </span>
+                          <span className="block aspect-[16/10] w-full bg-background p-2 sm:p-3">
+                            <img
+                              src={`${portfolioUrl}${project.image}`}
+                              alt={project.imageAlt}
+                              className="h-full w-full object-contain object-center"
+                            />
+                          </span>
+                          <span className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/20">
+                            <span className="inline-flex translate-y-2 items-center gap-2 rounded-md bg-card px-4 py-2.5 text-sm font-semibold text-card-foreground opacity-0 shadow-card transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                              <Maximize2 className="h-4 w-4 text-primary" />
+                              Open full screenshot
+                            </span>
+                          </span>
                         </span>
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-h-[92vh] max-w-[94vw] overflow-auto p-3 sm:p-5">
-                      <DialogHeader className="pr-8">
+                    <DialogContent className="flex max-h-[94vh] w-[96vw] max-w-7xl flex-col overflow-hidden p-0">
+                      <DialogHeader className="border-b border-border px-5 py-4 pr-12 text-left">
                         <DialogTitle>{project.title}</DialogTitle>
                         <DialogDescription>{project.imageAlt}</DialogDescription>
                       </DialogHeader>
-                      <img src={project.image} alt={project.imageAlt} className="h-auto w-full rounded-md border border-border" />
+                      <div className="overflow-auto bg-muted p-3 sm:p-6">
+                        <img
+                          src={`${portfolioUrl}${project.image}`}
+                          alt={project.imageAlt}
+                          className="mx-auto h-auto max-h-[76vh] w-auto max-w-full rounded-md border border-border bg-card shadow-card"
+                        />
+                      </div>
                     </DialogContent>
                   </Dialog>
 
@@ -128,7 +148,11 @@ const Works = () => {
                             <DialogTitle>{project.title}</DialogTitle>
                             <DialogDescription>{project.description}</DialogDescription>
                           </DialogHeader>
-                          <img src={project.image} alt={project.imageAlt} className="h-auto w-full rounded-md border border-border" />
+                          <img
+                            src={`${portfolioUrl}${project.image}`}
+                            alt={project.imageAlt}
+                            className="h-auto w-full rounded-md border border-border"
+                          />
                         </DialogContent>
                       </Dialog>
                     </div>
