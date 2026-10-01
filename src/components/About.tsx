@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Shield, Server } from "lucide-react";
+import { Award, Users, Shield, Server, ClipboardList } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -22,6 +22,11 @@ const About = () => {
       icon: <Award className="w-8 h-8 text-primary" />,
       title: "IT Infrastructure",
       description: "Windows 10/11, Microsoft 365, Entra ID, Intune, QNAP NAS, and servers"
+    },
+    {
+      icon: <ClipboardList className="w-8 h-8 text-primary" />,
+      title: "Administrative & Operations",
+      description: "Document and records management, meeting minutes, calendar coordination, and executive support"
     }
   ];
 
@@ -31,8 +36,8 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate IT professional with a proven track record in technical support, 
-            system administration, and customer service excellence.
+            IT support and administrative professional combining technical troubleshooting,
+            system administration, records and operations support, and customer service excellence.
           </p>
         </div>
 
@@ -40,13 +45,15 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Professional Background</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Results-driven IT Support Specialist with 4+ years of experience delivering robust technical
-              solutions, endpoint management, and network troubleshooting. Proven expertise in Microsoft 365,
-              Active Directory, Entra ID, and Intune.
+              IT Support Specialist with 4+ years of experience delivering robust technical solutions,
+              endpoint management, and network troubleshooting, alongside administrative and operations
+              support. Proven expertise in Microsoft 365, Active Directory, Entra ID, and Intune.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Track record of resolving complex service requests and executing large-scale device deployments,
-              supporting remote and onsite environments, reducing setup times, and keeping operations running for global clients.
+              Alongside technical work, I have handled administrative responsibilities — document and
+              records management, meeting minutes, calendar coordination, and executive support — plus
+              resolving complex service requests and large-scale device deployments for remote and onsite
+              environments, reducing setup times and keeping operations running for global clients.
             </p>
           </div>
           
@@ -67,7 +74,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {highlights.map((item, index) => (
             <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">

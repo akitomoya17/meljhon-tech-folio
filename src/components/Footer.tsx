@@ -11,8 +11,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-4">Meljhon Deaño</h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              IT Support Specialist with 4+ years of experience in endpoint management,
-              network troubleshooting, and reliable remote and onsite support.
+              IT Support Specialist with administrative and operations experience — 4+ years of
+              endpoint management, network troubleshooting, records handling, and reliable remote
+              and onsite support.
             </p>
             <div className="flex space-x-4">
               <a 

@@ -112,7 +112,8 @@ const Contact = () => {
               <p className="text-muted-foreground leading-relaxed">
                 With 4+ years of experience supporting government, private-sector, nonprofit, and
                 international clients, I specialize in endpoint management, Microsoft 365 administration,
-                network troubleshooting, and dependable remote and onsite support.
+                network troubleshooting, and administrative and operations support — records handling,
+                scheduling, and executive assistance — with dependable remote and onsite delivery.
               </p>
             </div>
           </div>
