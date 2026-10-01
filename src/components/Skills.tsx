@@ -1,12 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Users, 
-  Monitor, 
-  Server, 
-  Network, 
-  Wrench, 
-  Heart 
+import {
+  Users,
+  Monitor,
+  Server,
+  Network,
+  Wrench,
+  ClipboardList,
+  Heart
 } from "lucide-react";
 
 const Skills = () => {
@@ -68,6 +69,18 @@ const Skills = () => {
       ]
     },
     {
+      icon: <ClipboardList className="w-6 h-6 text-primary" />,
+      title: "Administrative & Records",
+      skills: [
+        "Administrative Records Management",
+        "Board Documentation",
+        "Secure Digital Communication",
+        "Digital Workspace Coordination",
+        "Data Privacy Compliance",
+        "Application Processing"
+      ]
+    },
+    {
       icon: <Heart className="w-6 h-6 text-primary" />,
       title: "Operations",
       skills: [
@@ -86,8 +99,8 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Skills Set</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Soft and technical skills across multiple platforms, tools, and technologies 
-            essential for modern IT support and infrastructure management.
+            Soft and technical skills across multiple platforms, tools, and technologies
+            essential for modern IT support, infrastructure management, and administrative operations.
           </p>
         </div>
 
