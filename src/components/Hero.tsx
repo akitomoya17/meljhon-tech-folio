@@ -39,13 +39,14 @@ const Hero = () => {
             </h1>
             <div className="relative mb-6">
               <p className="text-xl md:text-2xl text-hero-text-muted font-medium">
-                IT Support Specialist | Endpoint &amp; Microsoft 365
+                IT Support Specialist | Administrative &amp; Operations
               </p>
               <div className="h-1 w-24 bg-gradient-to-r from-white to-transparent mt-3 mx-auto lg:mx-0"></div>
             </div>
             <p className="text-lg text-hero-text-muted mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Results-driven IT Support Specialist with 4+ years of experience in endpoint management,
-              network troubleshooting, Microsoft 365, Active Directory, Entra ID, and Intune.
+              IT Support and Administrative professional with 4+ years across technical support,
+              endpoint management, and operations — Microsoft 365, Active Directory, Entra ID, Intune,
+              records handling, scheduling, and executive support.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">

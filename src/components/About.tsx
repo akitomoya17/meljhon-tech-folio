@@ -31,8 +31,8 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate IT professional with a proven track record in technical support, 
-            system administration, and customer service excellence.
+            IT support and administrative professional combining technical troubleshooting,
+            system administration, records and operations support, and customer service excellence.
           </p>
         </div>
 
@@ -40,13 +40,15 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Professional Background</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Results-driven IT Support Specialist with 4+ years of experience delivering robust technical
-              solutions, endpoint management, and network troubleshooting. Proven expertise in Microsoft 365,
-              Active Directory, Entra ID, and Intune.
+              IT Support Specialist with 4+ years of experience delivering robust technical solutions,
+              endpoint management, and network troubleshooting, alongside administrative and operations
+              support. Proven expertise in Microsoft 365, Active Directory, Entra ID, and Intune.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Track record of resolving complex service requests and executing large-scale device deployments,
-              supporting remote and onsite environments, reducing setup times, and keeping operations running for global clients.
+              Alongside technical work, I have handled administrative responsibilities — document and
+              records management, meeting minutes, calendar coordination, and executive support — plus
+              resolving complex service requests and large-scale device deployments for remote and onsite
+              environments, reducing setup times and keeping operations running for global clients.
             </p>
           </div>
           
