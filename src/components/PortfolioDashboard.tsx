@@ -71,11 +71,59 @@ const projects = [
 ];
 
 const experience = [
-  { role: "Independent IT Support Specialist", company: "Upwork", period: "2025 — Present", track: "IT Support" },
-  { role: "Board Administrative Assistant", company: "Boundless Freedom Project", period: "2025 — 2026", track: "Operations" },
-  { role: "IT Support Engineer", company: "Bladegrass Technologies / Concentrix", period: "2025", track: "IT Support" },
-  { role: "IT Technical Support", company: "E&W Group of Companies", period: "2023 — 2025", track: "IT Support" },
-  { role: "Passport / Authentication Staff", company: "Department of Foreign Affairs", period: "2022 — 2023", track: "Administration" },
+  {
+    role: "Independent IT Support Specialist",
+    company: "Upwork",
+    period: "2025 — Present",
+    track: "IT Support",
+    bullets: [
+      "Deliver remote IT support for hardware, software, VPN, firewall, and network connectivity issues",
+      "Administer Microsoft 365 and Google Workspace accounts, permissions, and security policies",
+      "Run system updates, data backups, and security audits while keeping documentation and SOPs current",
+    ],
+  },
+  {
+    role: "Board Administrative Assistant",
+    company: "Boundless Freedom Project",
+    period: "2025 — 2026",
+    track: "Operations",
+    bullets: [
+      "Maintained technical and administrative records, secure digital communication, and board documentation",
+      "Supported leadership with software access, digital workspace coordination, and technical troubleshooting",
+    ],
+  },
+  {
+    role: "IT Support Engineer",
+    company: "Bladegrass Technologies / Concentrix",
+    period: "2025",
+    track: "IT Support",
+    bullets: [
+      "Resolved 50+ weekly incidents and service requests in BMC Remedy across PC, network, software, and telephony",
+      "Imaged, configured, and deployed 200+ Windows 11 desktops, cutting setup time by roughly 30%",
+      "Handled Active Directory OU moves, Entra ID and Intune compliance, access provisioning, and asset tracking",
+    ],
+  },
+  {
+    role: "IT Technical Support",
+    company: "E&W Group of Companies",
+    period: "2023 — 2025",
+    track: "IT Support",
+    bullets: [
+      "Provided Tier 1 and Tier 2 remote and onsite support for websites, servers, POS systems, QNAP NAS, CCTV, and endpoints",
+      "Diagnosed hardware, software, connectivity, and performance issues to keep daily operations running",
+      "Managed the full IT asset lifecycle: inventory, hardware upgrades, and infrastructure maintenance",
+    ],
+  },
+  {
+    role: "Passport / Authentication Staff",
+    company: "Department of Foreign Affairs",
+    period: "2022 — 2023",
+    track: "Administration",
+    bullets: [
+      "Assisted the internal IT officer with hardware and software troubleshooting and digital records maintenance",
+      "Processed authentication applications in strict compliance with data privacy and security protocols",
+    ],
+  },
 ];
 
 const skillGroups = [
@@ -260,7 +308,7 @@ const PortfolioDashboard = () => {
                 <SectionHeading icon={BriefcaseBusiness} title="Experience" subtitle="IT support and administrative operations." />
                 <div className="divide-y divide-border">
                   {experience.map((item) => (
-                    <div key={`${item.company}-${item.role}`} className="py-3 first:pt-0 last:pb-0">
+                    <div key={`${item.company}-${item.role}`} className="py-4 first:pt-0 last:pb-0">
                       <div className="flex items-start justify-between gap-3">
                         <div>
                           <p className="text-sm font-bold text-foreground">{item.role}</p>
@@ -269,6 +317,14 @@ const PortfolioDashboard = () => {
                         <Badge variant="secondary" className="shrink-0">{item.track}</Badge>
                       </div>
                       <p className="mt-1.5 flex items-center gap-1.5 text-xs text-muted-foreground"><CalendarDays className="h-3 w-3 text-primary" />{item.period}</p>
+                      <ul className="mt-2.5 space-y-1.5">
+                        {item.bullets.map((bullet) => (
+                          <li key={bullet} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                            <span className="mt-[5px] h-1.5 w-1.5 shrink-0 rounded-[2px] bg-primary" />
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                 </div>
