@@ -51,6 +51,45 @@ const navItems = [
 
 const tools = ["Microsoft 365", "Active Directory", "Entra ID", "Intune", "BMC Remedy", "Zendesk"];
 
+const aboutTracks = [
+  {
+    icon: MonitorCog,
+    title: "IT Support",
+    lines: [
+      "Tier 1 and Tier 2 remote and onsite troubleshooting for hardware, software, VPN, firewall, and connectivity issues.",
+      "Microsoft 365 and Google Workspace administration: accounts, permissions, security policies, Entra ID, and Intune compliance.",
+      "Imaging, configuration, and standardized deployment of Windows 11 devices for enterprise environments.",
+    ],
+  },
+  {
+    icon: ClipboardList,
+    title: "Administrative",
+    lines: [
+      "Board documentation and secure digital communication for a U.S.-based nonprofit.",
+      "Application processing and digital records maintenance in a government office under strict data privacy rules.",
+      "Technical and administrative record keeping that stays organized and audit-ready.",
+    ],
+  },
+  {
+    icon: Server,
+    title: "Operations",
+    lines: [
+      "System updates, data backups, and security audits backed by clear documentation and SOPs.",
+      "Full IT asset lifecycle: inventory tracking, hardware upgrades, and infrastructure maintenance.",
+      "Endpoint and network upkeep across LAN/WAN/VLAN, NAS, CCTV, POS, and telephony systems.",
+    ],
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Executive Support",
+    lines: [
+      "Leadership assistance with software access, digital workspace coordination, and technical troubleshooting.",
+      "Calendar coordination, meeting schedules and minutes, and dependable follow-through on priorities.",
+      "Responsive remote support for busy teams working across time zones.",
+    ],
+  },
+];
+
 const projects = [
   {
     title: "Microsoft 365 to OVH Cloud",
@@ -292,17 +331,36 @@ const PortfolioDashboard = () => {
               </section>
 
               <section id="about" className="bento-card scroll-mt-24 md:col-span-3 xl:col-span-5">
-                <SectionHeading icon={UserRound} title="About" subtitle="Technical reliability with operational discipline." />
+                <SectionHeading icon={UserRound} title="About" subtitle="IT support, administration, operations, and executive assistance." />
                 <p className="text-sm leading-7 text-muted-foreground">
-                  IT support and administrative professional with 4+ years across technical support, endpoint management, records handling, scheduling, and executive support.
+                  IT and administrative professional with 4+ years supporting government agencies, private enterprises, and international remote teams. I keep systems running and the work around them organized — from endpoint and network troubleshooting to records, scheduling, and executive assistance.
                 </p>
+                <div className="mt-5 space-y-3">
+                  {aboutTracks.map(({ icon: Icon, title, lines }) => (
+                    <div key={title} className="rounded-md border border-border bg-background p-4">
+                      <div className="flex items-center gap-2.5">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10 text-primary"><Icon className="h-4 w-4" /></span>
+                        <h3 className="text-sm font-bold text-foreground">{title}</h3>
+                      </div>
+                      <ul className="mt-3 space-y-1.5">
+                        {lines.map((line) => (
+                          <li key={line} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                            <span className="mt-[5px] h-1.5 w-1.5 shrink-0 rounded-[2px] bg-primary" />
+                            <span>{line}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
                 <div className="mt-5 grid grid-cols-2 gap-3">
                   <div className="metric-tile"><strong>4+</strong><span>Years experience</span></div>
                   <div className="metric-tile"><strong>50+</strong><span>Weekly tickets resolved</span></div>
                   <div className="metric-tile"><strong>200+</strong><span>Windows devices deployed</span></div>
-                  <div className="metric-tile"><strong>2</strong><span>Professional tracks</span></div>
+                  <div className="metric-tile"><strong>4</strong><span>Support tracks covered</span></div>
                 </div>
               </section>
+
 
               <section id="experience" className="bento-card scroll-mt-24 md:col-span-3 xl:col-span-5">
                 <SectionHeading icon={BriefcaseBusiness} title="Experience" subtitle="IT support and administrative operations." />
